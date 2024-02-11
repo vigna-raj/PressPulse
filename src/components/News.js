@@ -16,7 +16,7 @@ const News = (props) => {
         props.setProgress(90)
         setData(jsondata.articles);
         setLoading(false)
-        setTotresults(jsondata.length)
+        setTotresults(jsondata.totalResults)
         props.setProgress(100)
     }
     useEffect(() => {
